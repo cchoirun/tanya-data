@@ -14,7 +14,7 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", scrollActive);
     }, [active]);
     return (
-        <div className={`${ active ? "shadow-lg bg-white": ""} fixed top-0 left-0 z-20 w-full`}>
+        <div className={`${ active ? "shadow-lg bg-white": ""} fixed top-0 left-0 z-20 w-full px-4`}>
             <div>
                 <div className={`${active ? "py-2 transition-all duration-300": "py-4 "} container flex items-center justify-between py-6 mx-auto`}>
                     <div className="flex items-center gap-4">

@@ -5,7 +5,7 @@ import { FaLaptopCode } from "react-icons/fa";
 
 import courses1 from "./assets/course.png"
 
-import logo from "./assets/logo.png";
+import logo from "./assets/logo-tanyadata.png";
 
 export const NavLinks = [
     {

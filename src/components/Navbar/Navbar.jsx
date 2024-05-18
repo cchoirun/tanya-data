@@ -3,6 +3,8 @@ import { NavLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import MobileNavLinks from "./MobileNavLinks";
 import NavLink from "./NavLink"
+import logo from "./assets/logo-tanyadata.png";
+
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     const [active, setActive] = useState(null);
@@ -20,7 +22,7 @@ const Navbar = () => {
                     <div className="flex items-center gap-4">
                         <HiMenuAlt1 className="text-3xl cursor-pointer sm:hidden" onClick={() => setToggle(true)}/>
                         <div>
-                            <img src="../src/assets/logo-tanyadata.png" alt="" className="w-24 h-auto " />  
+                            <img src={logo} alt="" className="w-24 h-auto " />  
                         </div>
                     </div>
                     <div className="items-center hidden sm:flex">

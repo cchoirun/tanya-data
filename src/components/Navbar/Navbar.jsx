@@ -19,8 +19,9 @@ const Navbar = () => {
                 <div className={`${active ? "py-2 transition-all duration-300": "py-4 "} container flex items-center justify-between py-6 mx-auto`}>
                     <div className="flex items-center gap-4">
                         <HiMenuAlt1 className="text-3xl cursor-pointer sm:hidden" onClick={() => setToggle(true)}/>
-                        <div className="text-xl font-bold tracking-wide uppercase text-blue_main">TanyaData</div>
+                        <div>
                             <img src="../src/assets/logo.png" alt="" className="w-24 h-auto " />  
+                        </div>
                     </div>
                     <div className="items-center hidden sm:flex">
                         {NavLinks.map(navLink => {

@@ -3,7 +3,7 @@ import { NavLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import MobileNavLinks from "./MobileNavLinks";
 import NavLink from "./NavLink"
-import logo from "./assets/logo-tanyadata.png";
+import logo from "../../assets/logo-tanyadata.png";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);

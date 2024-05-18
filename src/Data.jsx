@@ -98,6 +98,7 @@ export const courses = [
 ];
 
 
+export default logo;
 export const logos = [logo];
 
 export const accordions = [

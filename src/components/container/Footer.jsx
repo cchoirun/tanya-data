@@ -17,8 +17,8 @@ const Footer = () => {
         >
             <div className="grid grid-cols-1 gap-8 text-white md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 place-items-start">
                 <div>
-                    <div className="mb-6 font-bold ">Get Started</div>
-                    <p className="text-sm leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis delectus nesciunt aspernatur nam reprehenderit modi deserunt reiciendis minima quod eaque.</p>
+                    <div className="mb-6 font-bold ">Tanya Data</div>
+                    <p className="text-sm leading-7">Tanya data merupakan platform belajar interaktif terkait data yang diperuntukkan untuk kamu yang ingin belajar terkait data.</p>
                 </div>
                 <div>
                     <div className="mb-6 font-bold ">Services</div>

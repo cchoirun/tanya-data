@@ -9,7 +9,7 @@ const Contact = () => {
                     Contact Us Now
                 </div>
                 <p className="text-sm leading-7 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio impedit molestiae iusto,  Recusandae quidem consequuntur ad.
+                    Hubungi lebih lanjut apabila ada yang ingin ditanyakan.
                 </p>
                 <motion.form initial ={{scale: 0.9}} whileInView = {{scale: 1}} transition={{duration: 0.3}} className="mt-5">
                     <input type="email" placeholder="Enter your email address" className="p-2 text-sm shadow-md outline-none sm:p-3 sm:w-72 w-60"/>

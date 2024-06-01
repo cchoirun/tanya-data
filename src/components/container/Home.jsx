@@ -10,7 +10,7 @@ const Home = () => {
                 <div className="sm:text-[2.5rem] text-[1.825rem] font-bold ">
                      Belajar Data? <br/> ya di <span className=" text-blue_main">TanyaData</span>
                 </div>
-                <p className="max-w-sm text-sm leading-7 text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et numquam illo dolores illum itaque repudiandae officiis sed cupiditate id.</p>
+                <p className="max-w-sm text-sm leading-7 text-gray-700 ">Tanya data merupakan platform untuk kamu belajar segala hal mengenai data.</p>
                 <div className="mt-6">
                     <button className="px-6 py-3 mr-4 text-sm font-bold text-white rounded-lg bg-blue_main ">
                         Get Started

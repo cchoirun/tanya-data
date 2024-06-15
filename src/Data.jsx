@@ -95,182 +95,30 @@ export const courses = [
         participants: 900,
         price: 105
     },
-    {
-        id: 5,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 6,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 7,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 8,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 9,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 10,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 11,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 12,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 13,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 14,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 15,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 16,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 17,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 18,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 19,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 20,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 21,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 22,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
-    {
-        id: 23,
-        image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
-        rating: 4.9,
-        participants: 900,
-        price: 105
-    },
+    
 ];
 
 
 export default logo;
 export const logos = [logo];
+
+export const logosUniv = [
+    {
+      name: 'Universitas A',
+      imageUrl: 'https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-320x320.png', // Ganti dengan URL logo asli
+    },
+    {
+      name: 'Perusahaan B',
+      imageUrl: 'https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-320x320.png', // Ganti dengan URL logo asli
+    },
+    {
+      name: 'Startup C',
+      imageUrl: 'https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-320x320.png', // Ganti dengan URL logo asli
+    },
+    // ... tambahkan logo lainnya sesuai kebutuhan
+  ];
+  
+
 
 export const accordions = [
     {

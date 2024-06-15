@@ -4,6 +4,8 @@ import { HiMenuAlt1, HiX } from "react-icons/hi";
 import MobileNavLinks from "./MobileNavLinks";
 import NavLink from "./NavLink"
 import logo from "../../Data";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -32,8 +34,28 @@ const Navbar = () => {
                         })}
                     </div>
                     <div>
-                        <button className="px-4 py-1 font-medium text-md text-orange_main ">Masuk</button>
-                        <button className="px-4 py-1 font-medium text-white rounded-full text-md d bg-orange_main ">Daftar</button>
+                    
+                    <Link to="/login" className="px-4 py-1 font-medium text-md text-orange_main">
+                        <motion.span
+                            whileHover={{ scale: 1.05, color: "#FFA135" }} // Warna orange gelap saat hover
+                            whileTap={{ scale: 0.95 }}
+                            transition={{ duration: 0.2, ease: "easeOut" }}
+                        >
+                            Masuk
+                        </motion.span>
+                    </Link>
+                    
+                    <Link to="/register" >
+                        <motion.button
+                            className="px-4 py-1 font-medium text-white rounded-full text-md bg-orange_main"
+                            whileHover={{ scale: 1.05, backgroundColor: "#fff", color :"#FFA135" }} // Warna orange gelap saat hover
+                            whileTap={{ scale: 0.95 }}
+                            transition={{ duration: 0.2, ease: "easeOut" }}
+                        >
+                        Daftar
+                        </motion.button>
+                    </Link>
+                    
                     </div>
                     {toggle && (
                         <div className="fixed top-0 left-0 z-20 flex flex-col items-center justify-center gap-8 py-8 bg-white shadow-lg w-96 text-blue_main">

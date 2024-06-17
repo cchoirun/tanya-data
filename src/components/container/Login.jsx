@@ -13,10 +13,10 @@ function Login() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      window.location.href = ('\Profile');
       toast.success("Kamu Berhasil Masuk!",{
         position: "top-center",
       });
+      window.location.href = ('\profile');
     } catch (error) {
       console.log(error.message);
       toast.error(error.message,{

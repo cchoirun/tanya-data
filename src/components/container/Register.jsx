@@ -23,10 +23,12 @@ function Register() {
           fullName: name
         });
       }
-      console.log("User registered successfully!");
+      // console.log("User registered successfully!");
+      
       toast.success("Registrasi Kamu Berhasil!",{
         position: "top-center",
       });
+      window.location.href = ('\login');
     }catch(error){
       console.log(error.message);
       toast.error(error.message,{

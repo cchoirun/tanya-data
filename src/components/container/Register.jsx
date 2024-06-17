@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { motion } from "framer-motion"; // Jika Anda ingin menambahkan animasi
 import registerImage from "../../assets/About.png"; // Ganti dengan path gambar Anda
-import { auth } from "./Firebase";
+import { auth, db } from "./Firebase";
+import { setDoc, doc } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -15,9 +17,21 @@ const Register = () => {
       await createUserWithEmailAndPassword(auth, email, password);
       const user = auth.currentUser;
       console.log(user);
+      if(user){
+        await setDoc(doc(db, "Users", user.uid), {
+          email: user.email,
+          fullName: name
+        });
+      }
       console.log("User registered successfully!");
+      toast.success("Registrasi Kamu Berhasil!",{
+        position: "top-center",
+      });
     }catch(error){
       console.log(error.message);
+      toast.error(error.message,{
+        position: "top-center",
+      });
     }
 
   }

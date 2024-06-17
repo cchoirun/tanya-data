@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { motion } from "framer-motion"; // Jika Anda ingin menambahkan animasi
 import registerImage from "../../assets/About.png"; // Ganti dengan path gambar Anda
+import { auth } from "./Firebase";
 
 const Register = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    try{
+      await createUserWithEmailAndPassword(auth, email, password);
+      const user = auth.currentUser;
+      console.log(user);
+      console.log("User registered successfully!");
+    }catch(error){
+      console.log(error.message);
+    }
+
+  }
+
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Bagian Kiri (Gambar) */}
       <div className="flex items-center justify-center w-1/2">
-        <img src={registerImage} alt="Register" className="object-cover w-3/4 rounded-lg h-3/4" />
+        <img src={registerImage} alt="Register" className="object-contain w-3/4 rounded-lg h-3/4" />
       </div>
 
       {/* Bagian Kanan (Form Registrasi) */}
       <div className="flex flex-col items-center justify-center w-1/2 p-8">
         <h2 className="mb-4 text-3xl font-bold">Daftar</h2>
 
-        <form className="w-full max-w-sm">
+        <form className="w-full max-w-sm" onSubmit={handleRegister}>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="name">
               Nama Lengkap
@@ -24,6 +43,8 @@ const Register = () => {
               id="name"
               type="text"
               placeholder="Masukkan nama lengkap Anda"
+              onChange={(e) => setName(e.target.value)}
+              required
             />
           </div>
           <div className="mb-4">
@@ -35,6 +56,8 @@ const Register = () => {
               id="email"
               type="email"
               placeholder="Masukkan email Anda"
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
           <div className="mb-6">
@@ -45,13 +68,15 @@ const Register = () => {
               className="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               id="password"
               type="password"
-              placeholder="******************"
+              placeholder="********"
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
           <div className="flex items-center justify-between">
             <button
               className="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700 focus:outline-none focus:shadow-outline"
-              type="button" // Ubah menjadi "submit" jika Anda ingin menangani submit form
+              type="submit" // Ubah menjadi "submit" jika Anda ingin menangani submit form
             >
               Daftar
             </button>

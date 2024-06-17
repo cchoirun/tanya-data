@@ -2,9 +2,7 @@ import Index from "./components/Pages/Index"
 import LoginPage from "./components/Pages/LoginPage"
 import RegisterPage from "./components/Pages/RegisterPage"
 import Nopage from "./components/Pages/Nopage"
-import Navbar from "./components/Navbar/Navbar"
-import Footer from "./components/container/Footer"
-
+import { ToastContainer } from "react-toastify"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
 
@@ -19,7 +17,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} /> 
         <Route path="*" element={<Nopage />} /> 
       </Routes>
-     
+     <ToastContainer/>
     </div>
   </BrowserRouter>
       

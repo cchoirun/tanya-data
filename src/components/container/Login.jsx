@@ -1,13 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion"; // Jika Anda ingin menambahkan animasi
 import loginImage from "../../assets/About.png"; // Ganti dengan path gambar Anda
 
-const LoginPage = () => {
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Bagian Kiri (Gambar) */}
       <div className="flex items-center justify-center w-1/2">
-        <img src={loginImage} alt="Login" className="object-cover w-3/4 rounded-lg h-3/4" />
+        <img src={loginImage} alt="Login" className="object-contain w-3/4 rounded-lg h-3/4" />
       </div>
 
       {/* Bagian Kanan (Form Login) */}
@@ -24,6 +26,8 @@ const LoginPage = () => {
               id="email"
               type="email"
               placeholder="Masukkan email Anda"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="mb-6">
@@ -34,7 +38,9 @@ const LoginPage = () => {
               className="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               id="password"
               type="password"
-              placeholder="******************"
+              placeholder="*********"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <div className="flex items-center justify-between">
@@ -64,7 +70,7 @@ const LoginPage = () => {
             </button>
           </div>
           <div className="mt-8">
-          <p className="text-center text-gray-500">Belum punya akun? <a href="/register" className="text-blue-600  hover:text-blue-800 hover:underline">Daftar</a></p>
+          <p className="text-center text-gray-500">Belum punya akun? <a href="/register" className="text-blue-600 hover:text-blue-800 hover:underline">Daftar</a></p>
           {/* <a className="inline-block mt-2 text-sm font-bold text-green-500 align-baseline hover:text-green-800" href="/login">
             Masuk
           </a> */}
@@ -75,4 +81,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

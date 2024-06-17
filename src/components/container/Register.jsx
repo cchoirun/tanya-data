@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"; // Jika Anda ingin menambahkan animasi
 import registerImage from "../../assets/About.png"; // Ganti dengan path gambar Anda
 
-const RegisterPage = () => {
+const Register = () => {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Bagian Kiri (Gambar) */}
@@ -59,14 +59,14 @@ const RegisterPage = () => {
         </form>
 
         <div className="mt-8">
-          <p className="text-center text-gray-500">Sudah punya akun?</p>
-          <a className="inline-block mt-2 text-sm font-bold text-green-500 align-baseline hover:text-green-800" href="/login">
+          <p className="text-center text-gray-500">Sudah punya akun? <a href="/login" className="text-green-600 hover:text-green-800 hover:underline">Masuk</a> </p>
+          {/* <a className="inline-block mt-2 text-sm font-bold text-green-500 align-baseline hover:text-green-800" href="/login">
             Masuk
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
   );
 };
 
-export default RegisterPage;
+export default Register;

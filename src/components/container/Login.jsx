@@ -63,6 +63,12 @@ const LoginPage = () => {
               Apple
             </button>
           </div>
+          <div className="mt-8">
+          <p className="text-center text-gray-500">Belum punya akun? <a href="/register" className="text-blue-600  hover:text-blue-800 hover:underline">Daftar</a></p>
+          {/* <a className="inline-block mt-2 text-sm font-bold text-green-500 align-baseline hover:text-green-800" href="/login">
+            Masuk
+          </a> */}
+        </div>
         </div>
       </div>
     </div>

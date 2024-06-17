@@ -1,7 +1,7 @@
 import Index from "./components/Pages/Index"
 import LoginPage from "./components/Pages/LoginPage"
+import RegisterPage from "./components/Pages/RegisterPage"
 import Nopage from "./components/Pages/Nopage"
-import RegisterPage from "./components/container/Register"
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/container/Footer"
 

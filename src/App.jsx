@@ -2,8 +2,9 @@ import Index from "./components/Pages/Index"
 import LoginPage from "./components/Pages/LoginPage"
 import RegisterPage from "./components/Pages/RegisterPage"
 import Nopage from "./components/Pages/Nopage"
-import { ToastContainer } from "react-toastify"
+import { ToastContainer, toast } from "react-toastify"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
   return (

@@ -33,6 +33,10 @@
   }
 }
 
+.Toastify__toast-container {
+  z-index: 9999; /* Nilai z-index yang tinggi */
+}
+
 .card {
   padding: 2em;
 }

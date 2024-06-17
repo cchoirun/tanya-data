@@ -25,16 +25,16 @@ function Login() {
     }
   }
   return (
-    <div className="flex h-screen bg-gray-100">
-      {/* Bagian Kiri (Gambar) */}
-      <div className="flex items-center justify-center w-1/2">
+    <div className="flex flex-col h-screen bg-gray-100 md:flex-row">
+      {/* Bagian Kiri (Gambar, Sembunyi di Layar Kecil) */}
+      <div className="items-center justify-center hidden w-1/2 md:flex">
         <img src={loginImage} alt="Login" className="object-contain w-3/4 rounded-lg h-3/4" />
       </div>
 
       {/* Bagian Kanan (Form Login) */}
-      <div className="flex flex-col items-center justify-center w-1/2 p-8">
+      <div className="flex flex-col items-center justify-center w-full p-8 pt-20 md:w-1/2"> 
+        {/* Ubah w-1/2 menjadi w-full agar form memenuhi lebar layar di mobile */}
         <h2 className="mb-4 text-3xl font-bold">Masuk</h2>
-
         <form className="w-full max-w-sm" onSubmit={handleLogin}>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">

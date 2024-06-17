@@ -39,14 +39,14 @@ function Register() {
   }
 
   return (
-    <div className="flex h-screen bg-gray-100">
-      {/* Bagian Kiri (Gambar) */}
-      <div className="flex items-center justify-center w-1/2">
+    <div className="flex flex-col h-screen pt-20 bg-gray-100 md:flex-row">
+      {/* Bagian Kiri (Gambar, Sembunyi di Layar Kecil) */}
+      <div className="items-center justify-center hidden w-1/2 md:flex">
         <img src={registerImage} alt="Register" className="object-contain w-3/4 rounded-lg h-3/4" />
       </div>
 
       {/* Bagian Kanan (Form Registrasi) */}
-      <div className="flex flex-col items-center justify-center w-1/2 p-8">
+      <div className="flex flex-col items-center justify-center w-full p-8 md:w-1/2"> 
         <h2 className="mb-4 text-3xl font-bold">Daftar</h2>
 
         <form className="w-full max-w-sm" onSubmit={handleRegister}>

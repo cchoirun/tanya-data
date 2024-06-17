@@ -10,6 +10,7 @@ function App() {
     
     <BrowserRouter>
     <div className="font-Fredoka ">
+    <ToastContainer position="top-right" style={{ zIndex: 9999 }}/>
      
       <Routes>
         <Route path="/" element={<Index />} />
@@ -17,7 +18,6 @@ function App() {
         <Route path="/register" element={<RegisterPage />} /> 
         <Route path="*" element={<Nopage />} /> 
       </Routes>
-     <ToastContainer/>
     </div>
   </BrowserRouter>
       

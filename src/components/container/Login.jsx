@@ -1,10 +1,28 @@
 import React, {useState} from "react";
 import { motion } from "framer-motion"; // Jika Anda ingin menambahkan animasi
 import loginImage from "../../assets/About.png"; // Ganti dengan path gambar Anda
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "./Firebase";
+import { toast } from "react-toastify";
 
-const Login = () => {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const handleLogin = async(e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      toast.success("Kamu Berhasil Masuk!",{
+        position: "top-center",
+      });
+    } catch (error) {
+      console.log(error.message);
+      toast.error(error.message,{
+        position: "top-center",
+      });
+    }
+  }
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Bagian Kiri (Gambar) */}
@@ -16,7 +34,7 @@ const Login = () => {
       <div className="flex flex-col items-center justify-center w-1/2 p-8">
         <h2 className="mb-4 text-3xl font-bold">Masuk</h2>
 
-        <form className="w-full max-w-sm">
+        <form className="w-full max-w-sm" onSubmit={handleLogin}>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
               Email
@@ -25,6 +43,7 @@ const Login = () => {
               className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               id="email"
               type="email"
+              autoComplete="email"
               placeholder="Masukkan email Anda"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -38,6 +57,7 @@ const Login = () => {
               className="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               id="password"
               type="password"
+              autoComplete="current-password webauthn"
               placeholder="*********"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -46,7 +66,7 @@ const Login = () => {
           <div className="flex items-center justify-between">
             <button
               className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-              type="button" // Ubah menjadi "submit" jika Anda ingin menangani submit form
+              type="submit" // Ubah menjadi "submit" jika Anda ingin menangani submit form
             >
               Masuk
             </button>

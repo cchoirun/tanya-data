@@ -6,7 +6,7 @@ import { auth, db } from "./Firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
 
-const Register = () => {
+function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -56,6 +56,7 @@ const Register = () => {
               className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               id="name"
               type="text"
+              autoComplete="given-name"
               placeholder="Masukkan nama lengkap Anda"
               onChange={(e) => setName(e.target.value)}
               required
@@ -69,6 +70,7 @@ const Register = () => {
               className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               id="email"
               type="email"
+              autoComplete="email"
               placeholder="Masukkan email Anda"
               onChange={(e) => setEmail(e.target.value)}
               required

@@ -9,8 +9,8 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBSqy_gXfnY2706HVVjVQ_xMC7F1UlMxF0",
-  authDomain: "tanya-data-2024.firebaseapp.com",
+  apiKey:  process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOM,
   projectId: "tanya-data-2024",
   storageBucket: "tanya-data-2024.appspot.com",
   messagingSenderId: "423895249398",

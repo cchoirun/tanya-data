@@ -1,6 +1,7 @@
 import Index from "./components/Pages/Index"
 import LoginPage from "./components/Pages/LoginPage"
 import RegisterPage from "./components/Pages/RegisterPage"
+import ProfilePage from "./components/Pages/ProfilePage"
 import Nopage from "./components/Pages/Nopage"
 import { ToastContainer, toast } from "react-toastify"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<LoginPage />} /> 
         <Route path="/register" element={<RegisterPage />} /> 
+        <Route path="/profile" element={<ProfilePage />} /> 
         <Route path="*" element={<Nopage />} /> 
       </Routes>
     </div>

@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 const Course = ({ image, category, title, participants, rating, price }) => {
   return (
     <motion.div
-      className="flex flex-col h-full overflow-hidden bg-white rounded-lg shadow-md" // Layout flex column untuk mengisi tinggi penuh
+      className="flex flex-col h-[450px] overflow-hidden bg-white rounded-lg shadow-md" // Layout flex column untuk mengisi tinggi penuh
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 10 }}
     >
-      <div className="relative w-[300px] "> {/* Container untuk gambar dengan posisi relatif */}
+      <div className="relative w-[300px]"> {/* Container untuk gambar dengan posisi relatif */}
         <motion.img
           src={image}
           alt=""

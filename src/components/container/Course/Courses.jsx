@@ -17,9 +17,9 @@ const Courses = () => {
                 return <Categories key={category.id}{...category}/>;
             })}
         </div>
-        <div className="mt-32 text-xl font-bold">Most Popular Courses</div>
-        <div className="relative w-full mt-12 overflow-hidden">
-            <div className=" animate-slide flex gap-8 md:w-full sm:w-[170%] xs:w-[340%] w-[480%]">
+        <div className="mt-32 text-xl font-bold ">Most Popular Courses</div>
+        <div className="relative w-full py-4 mt-12 ">
+            <div className=" flex gap-7 md:w-full sm:w-[170%] xs:w-[340%] w-[480%]">
                  {courses.map(course => {
                     return <Course key={course.id} {...course}/>
                  })}

@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../../assets/img-hero.png"
 import {logos, logosUniv} from "../../Data"
+import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -19,8 +20,9 @@ const Home = () => {
           whileHover={{backgroundColor: "#2563eb" }} // Perkecil scale untuk efek hover yang lebih halus
           whileTap={{ scale: 0.95 }} // Perkecil scale untuk efek tap yang lebih halus
           transition={{ duration: 0.2, ease: "easeOut" }} // Transisi lebih cepat dan halus
-        >
-          Get Started
+        ><Link to="/login">
+        Mulai</Link>
+          
         </motion.button>
         <motion.button
           className="px-6 py-3 text-sm font-bold border border-gray-600 border-solid rounded-lg"
@@ -28,7 +30,7 @@ const Home = () => {
           whileTap={{ scale: 0.95 }} // Perkecil scale untuk efek tap yang lebih halus
           transition={{ duration: 0.2, ease: "easeOut" }} // Transisi lebih cepat dan halus
         >
-          Discover
+          Tentang Kami
         </motion.button>
       </div>
             </div>

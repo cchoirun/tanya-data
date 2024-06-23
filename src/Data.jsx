@@ -62,8 +62,8 @@ export const courses = [
     {
         id: 1,
         image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
+        category: "Data Science",
+        title: "Data Stimulate",
         rating: 4.9,
         participants: 500,
         price: 105
@@ -71,8 +71,8 @@ export const courses = [
     {
         id: 2,
         image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
+        category: "Data Science",
+        title: "Belajar Excel Dasar",
         rating: 4.9,
         participants: 900,
         price: 105
@@ -80,8 +80,8 @@ export const courses = [
     {
         id: 3,
         image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
+        category: "Data Science",
+        title: "Belajar Excel Menengah",
         rating: 4.9,
         participants: 900,
         price: 105
@@ -89,8 +89,8 @@ export const courses = [
     {
         id: 4,
         image: courses1,
-        category: "Web Design",
-        title: "The Complete web Design Course",
+        category: "Data Science",
+        title: "Belajar Excel Mahir",
         rating: 4.9,
         participants: 900,
         price: 105

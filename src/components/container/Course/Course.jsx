@@ -5,33 +5,34 @@ import { motion } from "framer-motion";
 const Course = ({ image, category, title, participants, rating, price }) => {
   return (
     <motion.div
-      className="course p-2 shadow-lg min-w-[15rem] bg-gray-300 rounded-md cursor-pointer"
-      whileHover={{ scale: 1.05 }} // Efek hover perbesar
-      transition={{ type: "spring", stiffness: 300, damping: 10 }} // Transisi spring
+      className="flex flex-col h-full overflow-hidden bg-white rounded-lg shadow-md" // Layout flex column untuk mengisi tinggi penuh
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300, damping: 10 }}
     >
-      <motion.img
-        src={image}
-        alt=""
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.8 }} // Animasi fade-in gambar
-      />
-      <div className="mt-2 text-xs text-blue_main">{category}</div>
-      <div className="mt-2 text-sm font-bold">{title}</div>
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="p-1 bg-gray-400 rounded-full">
-            <AiOutlineUser className="text-blue_main" />
-          </div>
-          <div className="text-sm font-semibold">{participants}</div>
+      <div className="relative w-[300px] "> {/* Container untuk gambar dengan posisi relatif */}
+        <motion.img
+          src={image}
+          alt=""
+          className="object-cover w-full h-48" // Sesuaikan tinggi dan atur object-fit menjadi cover
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        />
+        <div className="absolute px-2 py-1 text-xs text-white bg-blue-500 rounded-md top-2 left-2">
+          {category}
         </div>
-        <div className="flex items-center gap-2">
-          <div className="p-1 rounded-full bg-slate-300">
-            <AiOutlineStar className="text-orange_main" />
-          </div>
-          <div className="text-sm font-medium">{rating}</div>
-        </div>
-        <div className="text-sm font-medium">${price}</div>
+      </div>
+      <div className="flex flex-col flex-grow p-4"> {/* Layout flex column dan flex-grow untuk konten */}
+        <h2 className="mb-2 text-xl font-semibold">{title}</h2>
+        <p className="mb-4 text-sm text-gray-600">
+          {participants} peserta · {rating} bintang
+        </p>
+        <button className="px-4 py-2 mt-auto font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+          Join Course
+        </button>
+      </div>
+      <div className="py-2 text-center bg-gray-200">
+        <span className="text-xl font-semibold">${price}</span>
       </div>
     </motion.div>
   );

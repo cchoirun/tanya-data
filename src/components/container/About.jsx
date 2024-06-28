@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import about from "../../assets/About.png";
+import about_img from "../../assets/About-img.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import CSS AOS
 
@@ -9,13 +10,13 @@ const About = () => {
   }, []);
 
   return (
-    <div className="py-16 text-black section" id="about">
+    <div className="py-16 text-black " id="about">
       <div 
         className="container grid gap-8 mx-auto md:grid-cols-2 place-items-center"
         data-aos="fade-up"
       >
         <div className="w-[60%]">
-          <img src={about} alt="" data-aos="fade-right"/>
+          <img src={about_img} alt="" data-aos="fade-right"/>
         </div>
         <div data-aos="fade-left">
           <div className="font-bold sm:text-[1.875rem] text-[1.5rem] mb-5">

@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../../assets/img-hero.png"
+import bg_hero from "../../assets/bg-hero.png"
 import {logos, logosUniv} from "../../Data"
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
@@ -8,12 +9,12 @@ const Home = () => {
     return( 
     <div className="section" id="home">
         <div className="items-center md:flex">
-            <div>
+            <div className="">
                 <div className="mb-4 text-xs font-bold text-blue_main">{" "}your e-learning partner</div>
-                <div className="sm:text-[2.5rem] text-[1.825rem] font-bold ">
+                <div className="sm:text-[3.5rem] text-[2rem] font-bold ">
                      Belajar Data? <br/> ya di <span className=" text-blue_main">TanyaData</span>
                 </div>
-                <p className="max-w-sm text-sm leading-7 text-gray-700 ">Tanya data merupakan platform untuk kamu belajar segala hal mengenai data.</p>
+                {/* <p className="max-w-sm text-sm leading-7 text-gray-700 ">Tanya data merupakan platform untuk kamu belajar segala hal mengenai data.</p> */}
                 <div className="mt-6">
         <motion.button
           className="px-6 py-3 mr-4 text-sm font-bold text-white rounded-lg bg-blue_main"
@@ -35,14 +36,14 @@ const Home = () => {
       </div>
             </div>
             <div className="md:w-[60%]">
-                <img src={hero} alt="" />
+                <img src={bg_hero} alt="" />
             </div>
         </div>
         
 
-      {/* <div className="mt-12">
+      {/* <div className="mt-20">
         <p className="text-xl text-center">
-          We collaborate with{' '}
+          Supported by{' '}
           <span className="text-blue_main">100+ leading universities and companies</span>
         </p>
         <motion.div

@@ -40,7 +40,7 @@ const Home = () => {
         </div>
         
 
-      <div className="mt-12">
+      {/* <div className="mt-12">
         <p className="text-xl text-center">
           We collaborate with{' '}
           <span className="text-blue_main">100+ leading universities and companies</span>
@@ -62,7 +62,7 @@ const Home = () => {
             />
           ))}
         </motion.div>
-        </div>
+        </div> */}
     </div>
     );
 };

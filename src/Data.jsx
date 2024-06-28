@@ -21,15 +21,20 @@ export const NavLinks = [
     {
         id: 3,
         href: "courses",
-        link: "Courses",
+        link: "Program",
     },
     {
         id: 4,
         href: "teacher",
-        link: "Teacher",
+        link: "Mentor",
     },
     {
         id: 5,
+        href: "teacher",
+        link: "News",
+    },
+    {
+        id: 6,
         href: "contact",
         link: "Contact",
     },

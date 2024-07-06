@@ -44,22 +44,17 @@ export const categories = [
     {
         id: 1,
         icon: <FiPenTool />,
-        category: "Design",
+        category: "Tanya Data Talks",
     },
     {
         id: 2,
         icon: <FaLaptopCode />,
-        category: "Development",
+        category: "Open Class",
     },
     {
         id: 3,
         icon: <FaLaptopCode />,
-        category: "Development",
-    },
-    {
-        id: 4,
-        icon: <FaLaptopCode />,
-        category: "Development",
+        category: "Career Coaching",
     },
 ]
 

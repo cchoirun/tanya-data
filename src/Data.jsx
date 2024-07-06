@@ -4,6 +4,12 @@ import { FaLaptopCode } from "react-icons/fa";
 // import { MdOutLineScience } from "react-icons/md";
 
 import courses1 from "./assets/course.png"
+import km from "./assets/logo_km.png"
+import kemdikbud from "./assets/logo_kemdikbud.png"
+import pkm from "./assets/logo_pkm.png"
+import ristekdikti from "./assets/logo_ristekdikti.png"
+import simbelmawa from "./assets/logo_simbelmawa.png"
+import its from "./assets/logo_its.png"
 
 import logo from "./assets/logo-tanyadata.png";
 
@@ -104,18 +110,30 @@ export const logos = [logo];
 
 export const logosUniv = [
     {
-      name: 'Universitas A',
-      imageUrl: 'https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-320x320.png', // Ganti dengan URL logo asli
+      name: 'Kemdikbud',
+      imageUrl: kemdikbud, // Ganti dengan URL logo asli
     },
     {
-      name: 'Perusahaan B',
-      imageUrl: 'https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-320x320.png', // Ganti dengan URL logo asli
+      name: 'Kampus Merdeka',
+      imageUrl: km, // Ganti dengan URL logo asli
     },
     {
-      name: 'Startup C',
-      imageUrl: 'https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-320x320.png', // Ganti dengan URL logo asli
+      name: 'PKM',
+      imageUrl: pkm, // Ganti dengan URL logo asli
     },
-    // ... tambahkan logo lainnya sesuai kebutuhan
+    {
+        name: 'Ristekdikti',
+        imageUrl: ristekdikti, // Ganti dengan URL logo asli
+    },
+    {
+        name: 'Simbelmawa',
+        imageUrl: simbelmawa, // Ganti dengan URL logo asli
+    },
+    {
+        name: 'ITS',
+        imageUrl: its, // Ganti dengan URL logo asli
+    },
+    
   ];
   
 

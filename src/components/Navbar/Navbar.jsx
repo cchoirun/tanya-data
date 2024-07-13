@@ -48,7 +48,7 @@ const Navbar = () => {
                     <Link to="/register" >
                         <motion.button
                             className="px-4 py-1 font-medium text-white rounded-full text-md bg-orange_main"
-                            whileHover={{ scale: 1.05, backgroundColor: "#fff", color :"#FFA135" }} // Warna orange gelap saat hover
+                            whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0)", color :"#FFA135" }} // Warna orange gelap saat hover
                             whileTap={{ scale: 0.95 }}
                             transition={{ duration: 0.2, ease: "easeOut" }}
                         >

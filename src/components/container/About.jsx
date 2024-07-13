@@ -10,7 +10,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="py-16 text-black " id="about">
+    <div className="py-16 text-black section" id="about">
       <div 
         className="container grid gap-8 mx-auto md:grid-cols-2 place-items-center"
         data-aos="fade-up"

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImage from "../../assets/course.png"; // Ganti dengan gambar hero Anda
+import heroImage from "../../assets/openclass.png"; // Ganti dengan gambar hero Anda
 import Navbar from "../Navbar/Navbar";
 import Footer from "../container/Footer";
 
@@ -20,11 +20,11 @@ const TalkPage = () => {
             <p className="mb-8 text-lg text-gray-700 md:text-xl">
               Rangkaian webinar interaktif untuk meningkatkan kemampuan Anda di bidang data science dan machine learning.
             </p>
-            <Link to="/daftar">
+            <a href="http://intip.in/tanyaDataTalks2024">
               <button className="px-8 py-3 font-bold text-white bg-blue-500 rounded-md shadow-md hover:bg-blue-600">
                 Daftar Sekarang
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -45,11 +45,11 @@ const TalkPage = () => {
                 Setiap sesi akan dipandu oleh para ahli di bidangnya, yang akan berbagi pengetahuan dan pengalaman mereka.
               </p>
               <h3 className="mb-2 text-xl font-semibold text-gray-900">
-                Materi: Computer Vision
+                Materi: Basic Data Analyst
               </h3>
               <p className="mb-6 text-lg text-gray-700">
-                Dalam sesi ini, Anda akan mempelajari dasar-dasar computer vision, mulai dari pengolahan citra hingga pengenalan objek. 
-                Kami akan membahas algoritma terkini, teknik implementasi, dan aplikasi praktis computer vision dalam berbagai bidang.
+                Dalam sesi ini, Anda akan mempelajari dasar-dasar data analyst hingga beberapa penerapan sederhana. 
+                Kami akan membahas algoritma terkini, teknik implementasi, dan aplikasi praktis data analis dalam berbagai bidang.
               </p>
               <h3 className="mb-2 text-xl font-semibold text-gray-900">
                 Dokumentasi dan Jadwal
@@ -59,6 +59,7 @@ const TalkPage = () => {
                 Jadwal lengkap dan informasi pendaftaran akan diumumkan melalui website dan media sosial Tanya Data.
               </p>
             </div>
+           
           </div>
         </div>
       </section>
@@ -69,11 +70,11 @@ const TalkPage = () => {
           <h2 className="mb-4 text-2xl font-semibold text-gray-900 md:text-3xl">
             Siap Meningkatkan Kemampuan Anda?
           </h2>
-          <Link to="/daftar">
+          <a href="http://intip.in/tanyaDataTalks2024">
             <button className="px-8 py-3 font-bold text-white bg-blue-500 rounded-md shadow-md hover:bg-blue-600">
               Daftar Sekarang
             </button>
-          </Link>
+          </a>
         </div>
       </section>
       <footer/>

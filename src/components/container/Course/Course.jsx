@@ -71,7 +71,7 @@ const Course = ({ image, category, title, participants, rating, price }) => {
           <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
             Join Course
           </button>
-          <div className="text-lg font-semibold">${price}</div>
+          <div className="text-lg font-semibold">Rp{price}k</div>
         </div>
       </div>
     </motion.div>

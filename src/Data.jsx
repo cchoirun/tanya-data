@@ -4,6 +4,11 @@ import { FaLaptopCode } from "react-icons/fa";
 // import { MdOutLineScience } from "react-icons/md";
 
 import courses1 from "./assets/course.png"
+import oc1 from "./assets/oc1.png"
+import oc2 from "./assets/oc2.png"
+import oc3 from "./assets/oc3.png"
+import oc4 from "./assets/oc4.png"
+import tdt1 from "./assets/tdt1.png"
 import km from "./assets/logo_km.png"
 import kemdikbud from "./assets/logo_kemdikbud.png"
 import pkm from "./assets/logo_pkm.png"
@@ -16,7 +21,7 @@ import logo from "./assets/logo-tanyadata.png";
 export const NavLinks = [
     {
         id: 1,
-        href: "home",
+        href: "/",
         link: "Home",
     },
     {
@@ -36,7 +41,7 @@ export const NavLinks = [
     },
     {
         id: 5,
-        href: "teacher",
+        href: "news",
         link: "News",
     },
     {
@@ -67,41 +72,78 @@ export const categories = [
 export const courses = [
     {
         id: 1,
-        image: courses1,
-        category: "Data Science",
-        title: "Data Stimulate",
+        image: oc1,
+        category: "Computer Vision",
+        title: "Introduction to CV",
         rating: 4.9,
-        participants: 500,
-        price: 105
+        participants: 100,
+        price: 0
     },
     {
         id: 2,
-        image: courses1,
+        image: tdt1,
         category: "Data Science",
-        title: "Belajar Excel Dasar",
+        title: "Tanya Data Talks",
         rating: 4.9,
-        participants: 900,
-        price: 105
+        participants: 100,
+        price: 0
     },
     {
         id: 3,
-        image: courses1,
-        category: "Data Science",
-        title: "Belajar Excel Menengah",
+        image: oc3,
+        category: "Computer Vision",
+        title: "Image Classification",
         rating: 4.9,
-        participants: 900,
-        price: 105
+        participants: 100,
+        price: 20
     },
     {
         id: 4,
-        image: courses1,
-        category: "Data Science",
-        title: "Belajar Excel Mahir",
+        image: oc4,
+        category: "Computer Vision",
+        title: "Advanced CV",
         rating: 4.9,
-        participants: 900,
-        price: 105
+        participants: 100,
+        price: 20
     },
     
+];
+
+export const openclass = [
+    {
+        id: 1,
+        image: oc1,
+        category : "Computer Vision",
+        title: "Open Class 1 : Introduction to Computer Vision",
+        rating: 4.5,
+        participants: 100,
+        price: 0
+    },
+    {
+        id: 2,
+        image: oc2,
+        category : "Computer Vision",
+        title: "Open Class 2 : Data in Computer Vision",
+        rating: 4.5,
+        participants: 100,
+        price: 0
+    },{
+        id: 1,
+        image: oc3,
+        category : "Computer Vision",
+        title: "Open Class 3 : Image Classification with Deep Learning",
+        rating: 4.7,
+        participants: 100,
+        price: 20
+    },{
+        id: 1,
+        image: oc4,
+        category : "Computer Vision",
+        title: "Open Class 4 : Advanced Computer Vision",
+        rating: 4.9,
+        participants: 100,
+        price: 20
+    },
 ];
 
 

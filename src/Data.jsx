@@ -8,6 +8,7 @@ import oc1 from "./assets/oc1.png"
 import oc2 from "./assets/oc2.png"
 import oc3 from "./assets/oc3.png"
 import oc4 from "./assets/oc4.png"
+import cc1 from "./assets/cc1.png"
 import tdt1 from "./assets/tdt1.png"
 import km from "./assets/logo_km.png"
 import kemdikbud from "./assets/logo_kemdikbud.png"
@@ -54,7 +55,7 @@ export const NavLinks = [
 export const categories = [
     {
         id: 1,
-        icon: <FiPenTool />,
+        icon: <FaLaptopCode />,
         category: "Tanya Data Talks",
     },
     {
@@ -65,7 +66,7 @@ export const categories = [
     {
         id: 3,
         icon: <FaLaptopCode />,
-        category: "Career Coaching",
+        category: "Competition Coaching",
     },
 ]
 
@@ -108,6 +109,46 @@ export const courses = [
     },
     
 ];
+
+export const popularCourses = [
+    {
+        id: 1,
+        image: oc1,
+        category: "Computer Vision",
+        title: "Introduction to CV",
+        rating: 4.9,
+        participants: 100,
+        price: 0
+    },
+    {
+        id: 2,
+        image: tdt1,
+        category: "Data Science",
+        title: "Tanya Data Talks",
+        rating: 4.9,
+        participants: 100,
+        price: 0
+    },
+    {
+        id: 3,
+        image: oc3,
+        category: "Computer Vision",
+        title: "Image Classification",
+        rating: 4.9,
+        participants: 100,
+        price: 20
+    },
+    {
+        id: 4,
+        image: cc1,
+        category: "Data Science",
+        title: "Emporeing Data Science",
+        rating: 4.9,
+        participants: 100,
+        price: 20
+    },
+];
+
 
 export const openclass = [
     {
@@ -177,24 +218,47 @@ export const logosUniv = [
     },
     
   ];
-  
+
+export const reviews = [
+    {
+        id: 1,
+        user: "Faisal Azmi Sirajuddin",
+        date: "10-07-204",
+        content: "Pemateri di TanyaData mampu menyampaikan materi dengan sangat baik, pemilihan materi sangar menarik dan informatif."
+    },
+    {   
+        id: 2,
+        user: "Karla Vania Widjanarko",
+        date: "17-07-2024",
+        content: "Pematerinya sangat bagus apalagi memberikan latihan praktek sendiri. Penjelasannya juga mudah dipahami."
+    },
+    {  
+        id: 3,
+        user: "Diva Fitria",
+        date: "17-07-2024",
+        content: "Kegiatannya bermanfaat kali, acaranya super duper bermanfaat."
+    }];
 
 
 export const accordions = [
     {
         id: 1,
-        title: "What is TanyaData?",
+        title: "Apa itu TanyaData?",
+        text: "TanyaData merupakan platform belajar data yang relevan dengan dunia perlombaan dan dunia kerja sehingga materi yang kamu dapatkan akan selalu relevan."
     },
     {
         id: 2,
-        title: "What can I learn from TanyaData?",
+        title: "Mengapa Saya harus menggunakan TanyaData?",
+        text: "TanyaData menghadirkan mentor-mentor profesional di bidangnya yang telah memiliki pengalaman baik di dunia perlombaan maupun dunia kerja sehingga kamu akan mendapatkan pengalaman yang berguna."
     },
     {
         id: 3,
-        title: "Can I teach on TanyaData?",
+        title: "Bagaimana cara mendaftar program di TanyaData?",
+        text: "Kamu dapat memilih salah satu program yang tersedia kemudian melakukan pendaftaran."
     },
     {
         id: 4,
-        title: "What is included in my TanyaData membership?",
+        title: "WApa benefit yang saya dapatkan saat mendaftar di TanyaData?",
+        text: "Kamu akan mendapatkan ilmu yang bermanfaat, sertifikat berbasis nasional, dan komunitas belajar data."
     },
 ];

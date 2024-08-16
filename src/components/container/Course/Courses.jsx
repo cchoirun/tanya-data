@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { categories, courses } from "../../../Data";
 import Categories from "./Categories";
 import Course from "./Course"; // Import komponen Course
+import { popularCourses } from "../../../Data";
 
 const Courses = () => {
   useEffect(() => {
@@ -33,7 +34,7 @@ const Courses = () => {
       <div className="mt-32 text-xl font-bold">Most Popular Courses</div>
 
       <div className="grid grid-cols-1 gap-4 mt-12 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
-        {courses.map((course) => (
+        {popularCourses.map((course) => (
           <Course key={course.id} {...course} />
         ))}
       </div>

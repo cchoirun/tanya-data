@@ -1,6 +1,7 @@
 import Home from "../container/Home";
 import About from "../container/About";
 import Courses from "../container/Course/Courses";
+import Review from "../container/Comment";
 import Faqs from "../container/Faqs";
 import Contact from "../container/Contact";
 import Footer from "../container/Footer";
@@ -13,6 +14,7 @@ export default function Index(){
         <Home />
         <About />
         <Courses />
+        <Review />
         <Faqs />
         <Contact />
         <Footer />

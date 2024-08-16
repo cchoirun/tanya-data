@@ -10,6 +10,7 @@ import { ToastContainer, toast } from "react-toastify"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ScrollToTop from "./ScrollToTop"
 import 'react-toastify/dist/ReactToastify.css';
+import NewsPage from "./components/Pages/NewsPage"
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} /> 
         <Route path="/register" element={<RegisterPage />} /> 
         <Route path="/profile" element={<ProfilePage />} /> 
+        <Route path="/news" element={<NewsPage />} /> 
         <Route path="/talks" element={<TalkPage />} /> 
         <Route path="/talks/invoice" element={<TalkInvoice />} /> 
         <Route path="/talks/success-payment" element={<SuccessPage />} /> 

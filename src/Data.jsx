@@ -16,7 +16,10 @@ import pkm from "./assets/logo_pkm.png"
 import ristekdikti from "./assets/logo_ristekdikti.png"
 import simbelmawa from "./assets/logo_simbelmawa.png"
 import its from "./assets/logo_its.png"
-
+import comp1 from "./assets/lomba1.png"
+import comp2 from "./assets/lomba2.png"
+import comp3 from "./assets/lomba3.png"
+import comp4 from "./assets/lomba4.png"
 import logo from "./assets/logo-tanyadata.png";
 
 export const NavLinks = [
@@ -142,13 +145,43 @@ export const popularCourses = [
         id: 4,
         image: cc1,
         category: "Data Science",
-        title: "Emporeing Data Science",
+        title: "Empowering Data Science",
         rating: 4.9,
         participants: 100,
         price: 20
     },
 ];
 
+export const competitions = [
+    {
+        id: 1,
+        image: comp1,
+        category: "Data Science",
+        title: "Data Analist Competition",
+        link: "https://www.prs-its.com/dac"
+    },
+    {
+        id: 2,
+        image: comp2,
+        category: "Data Science",
+        title: "DOKTER DATA",
+        link: "https://instagram.com/dokter_data"
+    },
+    {
+        id: 3,
+        image: comp3,
+        category: "Data Science",
+        title: "Data Science Competition",
+        link: "https://instagram.com/statday"
+    },
+    {
+        id: 4,
+        image: comp4,
+        category: "Data Science",
+        title: "DATAQUEST 2024",
+        link: "https://linktr.ee/dataquest2024"
+    },
+    ];
 
 export const openclass = [
     {
